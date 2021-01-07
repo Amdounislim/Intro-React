@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './composants/Nav'
+import {Main } from './composants/Main'
+// import {address, getUserName} from './composants/test1'
+// import userCard from "./composants/test1"
+import Footer from './composants/footer/Footer'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Main />
+      <Footer />
+      {/* <h2>{userCard.address}</h2> */}
+      {/* <button onClick={()=>alert(userCard.name)}>ok</button> */}
     </div>
   );
 }
